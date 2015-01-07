@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="SV_DevNullEmail" title="Email Transport to /Dev/Null" version_string="1.0.0" version_id="1" url="" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="SV_DevNullEmail" display_order="1" debug_only="0"/>
+    <option option_id="sv_devnullemail_enable" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="SV_DevNullEmail" display_order="10"/>
+    </option>
+    <option option_id="sv_devnullemail_error" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="SV_DevNullEmail" display_order="20"/>
+    </option>
+    <option option_id="sv_devnullemail_failurereason" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value>No route to host /dev/null</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="SV_DevNullEmail" display_order="30"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_group_SV_DevNullEmail" version_id="1" version_string="1.0.0"><![CDATA[Email Transport to /Dev/Null]]></phrase>
+    <phrase title="option_group_SV_DevNullEmail_description" version_id="1" version_string="1.0.0"><![CDATA[Send Email to /dev/null]]></phrase>
+    <phrase title="option_sv_devnullemail_enable" version_id="1" version_string="1.0.0"><![CDATA[Route to /dev/null]]></phrase>
+    <phrase title="option_sv_devnullemail_enable_explain" version_id="1" version_string="1.0.0"><![CDATA[All email is discarded.]]></phrase>
+    <phrase title="option_sv_devnullemail_error" version_id="1" version_string="1.0.0"><![CDATA[Fail on send]]></phrase>
+    <phrase title="option_sv_devnullemail_error_explain" version_id="1" version_string="1.0.0"><![CDATA[Forces the email transport to fail.]]></phrase>
+    <phrase title="option_sv_devnullemail_failurereason" version_id="1" version_string="1.0.0"><![CDATA[Failure reason]]></phrase>
+    <phrase title="option_sv_devnullemail_failurereason_explain" version_id="1" version_string="1.0.0"><![CDATA[This is the contents of the error message which will show up in the Error Logs.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
