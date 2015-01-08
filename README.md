@@ -1,4 +1,6 @@
 XenForo-DevNullEmailTransport
 ======================
 
-A XenForo Email Transport which delivers to /dev/null 
+A Zend Email Transport which delivers to /dev/null. 
+
+Strongly not recommended for production usage.
