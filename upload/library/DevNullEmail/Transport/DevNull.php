@@ -10,6 +10,7 @@ class SV_DevNullEmail_Transport_DevNull extends Zend_Mail_Transport_Abstract
         {
             throw new Zend_Mail_Transport_Exception($options->sv_devnullemail_failurereason);
         }
+        XenForo_Error::debug("Null routed email to " . $this->recipients); 
         return true;
     }
 }
