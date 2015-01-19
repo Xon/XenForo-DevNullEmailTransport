@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="SV_DevNullEmail" title="Email Transport to /Dev/Null" version_string="1.0.0" version_id="1" url="https://xenforo.com/community/resources/email-transport-to-dev-null.3943/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="SV_DevNullEmail" title="Email Transport to /Dev/Null" version_string="1.0.1" version_id="2" url="https://xenforo.com/community/resources/email-transport-to-dev-null.3943/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -13,7 +13,7 @@
   <email_templates/>
   <email_template_modifications/>
   <optiongroups>
-    <group group_id="SV_DevNullEmail" display_order="1" debug_only="0"/>
+    <group group_id="SV_DevNullEmail" display_order="51" debug_only="0"/>
     <option option_id="sv_devnullemail_enable" edit_format="onoff" data_type="boolean" can_backup="1">
       <default_value>0</default_value>
       <edit_format_params></edit_format_params>
