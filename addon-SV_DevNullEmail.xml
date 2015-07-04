@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="SV_DevNullEmail" title="Email Transport to /Dev/Null" version_string="1.0.1" version_id="2" url="https://xenforo.com/community/resources/email-transport-to-dev-null.3943/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="SV_DevNullEmail" title="Email Transport to /Dev/Null" version_string="1.0.2" version_id="10002" url="https://xenforo.com/community/resources/email-transport-to-dev-null.3943/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -32,6 +32,18 @@
       <sub_options></sub_options>
       <relation group_id="SV_DevNullEmail" display_order="30"/>
     </option>
+    <option option_id="sv_devnullemail_print_html" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="SV_DevNullEmail" display_order="110"/>
+    </option>
+    <option option_id="sv_devnullemail_print_text" edit_format="onoff" data_type="boolean" can_backup="1">
+      <default_value>0</default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="SV_DevNullEmail" display_order="100"/>
+    </option>
   </optiongroups>
   <permissions>
     <permission_groups/>
@@ -47,6 +59,10 @@
     <phrase title="option_sv_devnullemail_error_explain" version_id="1" version_string="1.0.0"><![CDATA[Forces the email transport to fail.]]></phrase>
     <phrase title="option_sv_devnullemail_failurereason" version_id="1" version_string="1.0.0"><![CDATA[Failure reason]]></phrase>
     <phrase title="option_sv_devnullemail_failurereason_explain" version_id="1" version_string="1.0.0"><![CDATA[This is the contents of the error message which will show up in the Error Logs.]]></phrase>
+    <phrase title="option_sv_devnullemail_print_html" version_id="10001" version_string="1.0.1"><![CDATA[Log email html]]></phrase>
+    <phrase title="option_sv_devnullemail_print_html_explain" version_id="10001" version_string="1.0.1"><![CDATA[Dumps email html into the error log.]]></phrase>
+    <phrase title="option_sv_devnullemail_print_text" version_id="10001" version_string="1.0.1"><![CDATA[Log email text]]></phrase>
+    <phrase title="option_sv_devnullemail_print_text_explain" version_id="10001" version_string="1.0.1"><![CDATA[Dumps email text into the error log.]]></phrase>
   </phrases>
   <route_prefixes/>
   <style_properties/>
